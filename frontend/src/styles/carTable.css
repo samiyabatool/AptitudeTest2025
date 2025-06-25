@@ -1,0 +1,10 @@
+.grid-container {
+  position: relative;
+}
+.custom-pagination-footer {
+  position: absolute;
+  bottom: 6px;
+  left: 28px;
+  z-index: 2;
+  pointer-events: none;
+}

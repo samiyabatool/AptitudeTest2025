@@ -1,0 +1,36 @@
+/* src/index.css */
+body {
+  margin: 0;
+  background-color: #eef2f7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* BMW grid theme overrides */
+.ag-theme-bmw {
+  --ag-header-background-color: #0f2044;
+  --ag-header-foreground-color: #fff;
+  --ag-header-height: 50px;
+  --ag-row-hover-color: #f1f3f5;
+  --ag-row-selected-color: #dce2e9;
+  font-family: 'Open Sans', sans-serif;   /* global grid font */
+}
+
+/* Zebra striping */
+.ag-theme-bmw .ag-row:nth-of-type(odd) {
+  background: #fafbfd;
+}
+
+/* Center cell text */
+.ag-theme-bmw .align-center {
+  text-align: center;
+}
+
+/* Center and color header text + icons */
+.ag-theme-bmw .ag-header-cell.align-center .ag-header-cell-label {
+  justify-content: center;
+  color: #f1f3f5; /* lighter BMW silver */
+}
+.ag-theme-bmw .ag-header-cell .ag-icon {
+  color: #f1f3f5 !important;
+  fill: #f1f3f5 !important;
+}

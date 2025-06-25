@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa;
+}
+
+.ag-theme-bmw {
+  --ag-header-background-color: #1b263b;
+  --ag-header-foreground-color: #fff;
+  --ag-header-height: 50px;
+  --ag-row-hover-color: #e0e1dd;
+  --ag-row-selected-color: #c7d0db;
+}
