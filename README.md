@@ -16,15 +16,6 @@ A modern full-stack web application for exploring, searching, and managing elect
 
 ---
 
-## 📸 Screenshots
-
-> *(Add your own screenshots in a `/screenshots/` folder)*
-
-![Main Table Screenshot](./screenshots/table.png)
-![Car Detail Screenshot](./screenshots/detail.png)
-
----
-
 ## 🗂️ Project Structure
 
 - **frontend/**
@@ -44,10 +35,9 @@ A modern full-stack web application for exploring, searching, and managing elect
     - models/
     - routes/
     - controllers/
-  - scripts/
+    - scripts/
   - ElectricCarData.csv
   - .env
-
 
 ---
 
@@ -60,6 +50,62 @@ A modern full-stack web application for exploring, searching, and managing elect
 
 ### 1. Backend Setup
 
-```bash
-cd backend
-npm install
+| Step                        | Commands                                   |
+|-----------------------------|--------------------------------------------|
+| **Go to backend folder**    | `cd backend`                               |
+| **Install dependencies**    | `npm install`                              |
+| **Create `.env` file**      | `MONGODB_URI=your_mongodb_connection_string` |
+| **Import data from CSV**    | `npm run import`       |
+| **Build backend server**    | `npm run build`                              |
+| **Start backend server**    | `npm start`                              |
+| **Backend URL**             | [http://localhost:5000](http://localhost:5000) |
+
+### 2. Frontend Setup
+
+| Step                        | Commands                                   |
+|-----------------------------|--------------------------------------------|
+| **Go to frontend folder**   | `cd frontend`                              |
+| **Install dependencies**    | `npm install`                              |
+| **Create `.env` file**      | `VITE_API_URL=http://localhost:5000/api`   |
+| **Start frontend server**   | `npm run dev`                              |
+| **Frontend URL**            | [http://localhost:5173](http://localhost:5173) |
+
+---
+
+## 💡 How to Use
+
+- Browse and search the electric car records
+- Apply filters on any column to narrow results
+- Click on the View icon to see full car specifications
+- Use the Delete icon to remove a car with confirmation
+- Pagination controls and row count are displayed at the bottom
+
+---
+
+## 🧠 Learnings and Challenges
+
+- Working with real-world CSV data required handling nulls and formatting issues
+- Customizing AG Grid to match Material UI styling took experimentation
+- Maintaining type safety across backend and frontend improved code reliability
+- Learned how to structure scalable full-stack apps using reusable components and modules
+
+---
+
+## 🛠️ Technologies Used
+
+- Frontend: React, AG Grid, Material UI, Vite, TypeScript  
+- Backend: Node.js, Express, MongoDB, Mongoose, TypeScript  
+
+---
+
+
+## 📸 Screenshots
+
+![Main Table Screenshot](./screenshots/mainPage.png)
+![Car Detail Screenshot](./screenshots/detailPage.png)
+
+
+---
+
+This project is for educational purposes only.  
+
